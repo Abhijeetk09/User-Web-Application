@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>User Management</title>
+</head>
+<body style="background-color:  rgb(162, 0, 162);">
+<center>
+	<h1 style="color: white;">User Management</h1>
+	<a style="color: rgb(255, 255, 255);" href="/">See All User</a>
+	
+	<form method="post" th:action="@{/save}">
+		<h3>Adding An User</h3>
+		<table>
+			<tr><th>User Name</th><th><input type="text" placeholder="enter user name" required name="name"></th></tr>
+			<tr><th>User Phone</th><th><input type="number" placeholder="enter user phone" name="phone"></th></tr>
+			<tr><th>User City</th><th><input type="text" placeholder="enter user city" name="city"</th></tr>
+			<tr><th><button type="submit">Add</button></th></tr>
+		</table>
+	</form>
+</center>
+</body>
+</html>
